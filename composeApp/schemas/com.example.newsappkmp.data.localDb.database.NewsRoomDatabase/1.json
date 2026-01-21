@@ -1,0 +1,61 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "0e5e0af30a8e4b4b893c25f7cbda867d",
+    "entities": [
+      {
+        "tableName": "news",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`author` TEXT, `title` TEXT, `description` TEXT, `url` TEXT NOT NULL, `publishedAt` TEXT, `content` TEXT, `urlToImage` TEXT, PRIMARY KEY(`url`))",
+        "fields": [
+          {
+            "fieldPath": "author",
+            "columnName": "author",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "publishedAt",
+            "columnName": "publishedAt",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "content",
+            "columnName": "content",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "urlToImage",
+            "columnName": "urlToImage",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "url"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '0e5e0af30a8e4b4b893c25f7cbda867d')"
+    ]
+  }
+}

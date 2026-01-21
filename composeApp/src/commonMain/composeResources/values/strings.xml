@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="news_title">News KMP</string>
+    <string name="load_news">New news</string>
+    <string name="favorite_news">Favorite news</string>
+    <string name="load_news_is_empty">Oops, there aren't any news for You</string>
+    <string name="no_favorite_news">No favorite news yet</string>
+</resources>
