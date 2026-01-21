@@ -1,5 +1,13 @@
 This is a Kotlin Multiplatform project targeting Android, iOS.
 
+<p align='center'>
+  <img src='composeApp/src/androidMain/ic_launcher-playstore.png' width='24%'/>
+</p>
+
+<p align='center'>
+  <img src='docs/main_screen.png' width='24%'/>
+</p>
+
 * [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
   It contains several subfolders:
   - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
