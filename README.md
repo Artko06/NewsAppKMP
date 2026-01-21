@@ -4,10 +4,6 @@ This is a Kotlin Multiplatform project targeting Android, iOS.
   <img src='composeApp/src/androidMain/ic_launcher-playstore.png' width='16%'/>
 </p>
 
-<p align='center'>
-  <img src='docs/main_screen.png' width='28%'/>
-</p>
-
 * [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
   It contains several subfolders:
   - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
@@ -19,6 +15,10 @@ This is a Kotlin Multiplatform project targeting Android, iOS.
 
 * [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
   you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+
+<p align='center'>
+  <img src='docs/main_screen.png' width='28%'/>
+</p>
 
 ### Build and Run Android Application
 
